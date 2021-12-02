@@ -18,7 +18,8 @@ def ocurrencia():
         'direccion': f'Calle {lista_nombres[random.randint(0,len(lista_nombres)-1)]} {lista_apellidos[random.randint(0,len(lista_apellidos)-1)]} nº {random.randint(1, 50)}',
         'precio': random.randint(100, 400)/10,
         'descripcion': lorem.sentence(),
-        'url': 'https://' + lorem.sentence().replace(' ', '/')
+        'url': 'https://' + lorem.sentence().replace(' ', '/'),
+        'fecha': f"{random.randint(1,30)}/{random.randint(1,12)}/{random.randint(1945, 2020)}"
     }
     return fila
 
